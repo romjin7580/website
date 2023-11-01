@@ -206,3 +206,7 @@ section:not(.banner) {
 @media screen and (min-width: 991px) {
   .product-dialog {
     max-width: 40vw; } }
+
+@media screen and (max-width: 767px) {
+  .banner-text {
+    text-align: center; } }
