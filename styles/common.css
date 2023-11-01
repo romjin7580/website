@@ -101,9 +101,6 @@ a:hover, a:focus, .main-button:hover, .main-button:focus, .main-outline-button:h
     background-repeat: no-repeat;
     width: 32px;
     height: 8px; }
-  .main-button:hover::before, .main-outline-button:hover::before {
-    left: 0;
-    width: 100%; }
 
 .main-button {
   border: 1px solid #175ABC;
@@ -115,10 +112,6 @@ a:hover, a:focus, .main-button:hover, .main-button:focus, .main-outline-button:h
   color: #175ABC; }
   .main-outline-button::after {
     background-image: url("../styles/images/button-blue.png"); }
-  .main-outline-button:hover {
-    color: #fff; }
-    .main-outline-button:hover::after {
-      background-image: url("../styles/images/button-arrow.png"); }
 
 .product-card {
   border-radius: 4px;
@@ -149,11 +142,20 @@ a:hover, a:focus, .main-button:hover, .main-button:focus, .main-outline-button:h
   .main-title {
     font-size: 28px; }
   .product-card .product-card-img {
-    height: auto; }
+    height: 105px; }
   .product-card .product-card-text {
     padding: 0.5em; }
     .product-card .product-card-text h4 {
       font-size: 18px; } }
+
+@media screen and (min-width: 991px) {
+  .main-button:hover::before, .main-outline-button:hover::before {
+    left: 0;
+    width: 100%; }
+  .main-outline-button:hover {
+    color: #fff; }
+    .main-outline-button:hover::after {
+      background-image: url("../styles/images/button-arrow.png"); } }
 
 /* ==========================================================================
 		header
@@ -281,9 +283,6 @@ footer {
     max-width: 810px; }
   footer a, footer .btn {
     color: #fff; }
-    footer a:hover, footer .btn:hover {
-      color: #fff;
-      opacity: .5; }
   footer ul li {
     margin-bottom: 10px; }
   footer .footer-slogan {
@@ -311,8 +310,6 @@ footer {
     border-radius: 50px; }
     footer .main-outline-button::after {
       display: none; }
-    footer .main-outline-button::before {
-      background-color: #1DD12F; }
   footer .copyright {
     display: block;
     text-align: center;
@@ -325,3 +322,9 @@ footer {
         width: 14%; }
     footer .main-outline-button {
       margin: 20px 0 0; } }
+  @media screen and (min-width: 991px) {
+    footer a:hover, footer .btn:hover {
+      color: #fff;
+      opacity: .5; }
+    footer .main-outline-button::before {
+      background-color: #1DD12F; } }
