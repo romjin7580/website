@@ -187,6 +187,9 @@ section:not(.banner) {
   .product-dialog .close:hover {
     border: 4px solid #175ABC; }
 
+.product-dialog .img-fluid {
+  width: 100%; }
+
 .product-dialog .product-dialog-text {
   text-align: center;
   padding: 20px 10px 40px; }
